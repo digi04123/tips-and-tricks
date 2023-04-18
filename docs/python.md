@@ -30,3 +30,17 @@ student._asdict()
 ````
 
 * Use pydantic whenever possible
+
+## Exception Handling
+* Be specific as possible
+* Print traceback, i.e.
+````py
+import logging
+
+logger = logging.getLogger()
+
+try:
+    num = int("abc")
+except ValueError as err:
+    logger.exception(err)
+````
