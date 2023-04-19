@@ -1,5 +1,19 @@
 # Python
 
+## Iterable vs Iterator
+* iterator is an object that implements the magic `__next__` method
+* iterable implements both the `__next__` and `__iter__` (return iterator)
+
+````py
+# list_1 is iterable, it can be used in a for-loop
+list_1 = range(3)
+
+# iter_list_1 is an iterator, it cannot be used in a for-loop, but can use iter_list_1.next() to iterate
+iter_list_1 = iter(list_1)
+
+
+````
+
 ## Enum
 
 * Use `IntEnum` if you need to compare the value of the Enum
@@ -44,3 +58,7 @@ try:
 except ValueError as err:
     logger.exception(err)
 ````
+
+## Styling
+* Use black, mypy, flake, isort to ensure correct linting and styling in place for code
+* Set up git hook (pre-commit, commit-msg and pre-push) to ensure code is checked on client side before pushing to remote repo
