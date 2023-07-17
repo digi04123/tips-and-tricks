@@ -71,4 +71,4 @@ except ValueError as err:
 * Set up git hook (pre-commit, commit-msg and pre-push) to ensure code is checked on client side before pushing to remote repo
 
 ## Logging
-![logger_flow](../img/logger_flow.webp "Logger Flow")
+![logger_flow](https://raw.githubusercontent.com/digi04123/tips-and-tricks/main/img/logger_flow.webp "Logger Flow")
