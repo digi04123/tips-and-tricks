@@ -14,6 +14,13 @@ iter_list_1 = iter(list_1)
 
 ````
 
+## Enumerate
+* Instead of using index to loop a list, use enumerate:
+````py
+for index, elem in enumerate(a_list):
+    print(index, elem)
+````
+
 ## Enum
 
 * Use `IntEnum` if you need to compare the value of the Enum
@@ -62,3 +69,6 @@ except ValueError as err:
 ## Styling
 * Use black, mypy, flake, isort to ensure correct linting and styling in place for code
 * Set up git hook (pre-commit, commit-msg and pre-push) to ensure code is checked on client side before pushing to remote repo
+
+## Logging
+![logger_flow](../img/logger_flow.webp "Logger Flow")
